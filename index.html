@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <style>
+      /* css para deixar aredondado e centralizado */
+
+      body {
+        text-align: center;
+        background-color: #FEF3E2;
+
+
+
+      }
+
+
+
+
+
+      img {
+        border-radius: 70px;
+      }
+
+
+      p {
+        text-size: 30px;
+      }
+
+
+
+      h1 {
+        color: #B43F3F;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        text-size: 60px;
+      }
+
+      h2 {
+        color: #B43F3F;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        text-size: 60px;
+      }
+
+      h3 {
+        color: #17153B;
+      }
+
+      input {
+        border-radius: 8px;
+      }
+
+      button {
+        border-radius: 10px;
+      }
+
+      /* divs para efeito visual*/
+
+
+      .calculadoradeimc {
+        background-color: #6EACDA;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 5px 5px black;
+        text-shadow: 10px black;
+      }
+
+
+      .calculadora {
+        background-color: #03346E;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 5px 5px black;
+        text-shadow: 10px black;
+      }
+
+
+      .login {
+        background-color: #478CCF;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 5px 5px black;
+        text-shadow: 10px black;
+      }
+
+      .digitacaotexto {
+        background-color: #77E4C8;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 5px 5px black;
+        text-shadow: 10px black;
+      }
+
+      .calculadoraarea {
+        background-color: #36C2CE;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 10px 5px 5px black;
+        text-shadow: 10px black;
+      }
+
+      .pe {
+        background-color: #C8ACD6;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px black;
+      }
+    </style>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+
+
+  <body>
+
+    <h1>Portifolio</h1>
+    <img <img="" src="batatafundo.jpg" alt="foto perfil" class="imgperfil" width="300" height="200">
+
+
+
+
+    <h3>Pedro Zagonel Gressler </h3>
+    <h3>Lajeado RS</h3>
+    <a href="">pedro2468zag@gmail.com</a>
+    <!-- 
+<a href="mailto:pedro2468zag@gmail.com">pedro2468zag@gmail.com</a> 
+-->
+
+
+    <h2>Meus Projetos</h2>
+
+    <!-- calcula indece da massa corporal-->
+
+    <div class="calculadoradeimc">
+      <h2>CALCULADORA DE IMC</h2>
+      <h3>calcula o indece de massa corporal</h3>
+      <p> Por favor digite sua Altura em metros,não esqueça de usar o ponto:</p>
+      <input type="text" id="recebe altura" placeholder="ex (1.70)">
+      <p> Por favor digite seu Peso em kilogramas:</p>
+      <input type="text" id="recebe peso" placeholder="ex (80)">
+      <button id="calcular">Calculo</button>
+    </div>
+
+
+
+    <!-- soma subtrai divide multplica 2 numeros -->
+    <div class="calculadora">
+      <h2>CALCULADORA DE 2 NUMEROS</h2>
+      <h3>Digite 2 numeros,e apos selecione a operação entre eles</h3>
+      <br><br>
+      <p>Digite o Primeiro numero:</p>
+      <input type="text" id="lernum1" placeholder="ex (12)">
+      <p>Digite o Segundo numero:</p>
+      <input type="text" id="lernum2" placeholder="ex (44)">
+      <br>
+      <button id="botaosoma">+</button>
+      <button id="botaomenos">-</button>
+      <button id="botaodivide">/</button>
+      <button id="botaomulti">*</button>
+    </div>
+
+
+
+
+    <!-- testa user e senha sao 'admin'e '1234' -->
+    <div class="login">
+      <h2>INTERFACE DE LOGIN</h2>
+      <h3>faça um teste de login</h3>
+      <h4>usario:admin e senha:1234</h4>
+      <h4>
+        <p>digite seu usario</p>
+        <br>
+        <input type="text" id="reuser" placeholder="ex (pedro zagonel)">
+        <p>digite sua senha</p>
+        <br>
+        <input type="password" id="resenha" placeholder="ex (espaço4.0)">
+        <button id="mensagem" type="button">Concluido</button>
+
+      </h4>
+    </div>
+
+
+
+    <!-- caixa de texto e contagem de caracter  -->
+    <div class="digitacaotexto">
+      <h2>DIGITAÇAO DE TEXTO</h2>
+      <h3>teste a caixa de mensagens</h3>
+      <p>Deixe sua mensagem abaixo</p>
+      <textarea id="resumo" rows="4" cols="50">  </textarea>
+      <p id="qtde">Quantidade: </p>
+
+      <button onclick="limpar()">limpar</button>
+
+    </div>
+
+
+
+
+    <div class="calculadoraarea">
+      <h2>CALCULADORA DE AREA</h2>
+      <h3>Calcule uma area em m^2</h3>
+      <p> Por favor digite o comprimento:</p>
+      <input type="text" id="recebecomprimento" placeholder="ex (24)">
+      <p> Por favor digite a largura:</p>
+      <input type="text" id="recebelargura" placeholder="ex (72)">
+      <button id="calculararea">Calcule</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <feet>
+      <div class="pe">
+        <h3>Site feito por Pedro Zagonel Gressler,espaço 4.0</h3>
+        <h3>
+        </h3>
+      </div>
+    </feet>
+
+
+    <script>
+      //calculadora de imc//
+
+      document.getElementById('calcular').addEventListener('click', function() {
+        var altura = document.getElementById('recebe altura').value;
+        var peso = document.getElementById('recebe peso').value;
+
+        let imc = peso / (altura * altura)
+
+        alert("Seu IMC é igual a " + imc);
+
+      });
+
+
+
+
+
+
+
+
+      //calculadora 2numeros simples//
+
+      document.getElementById("botaosoma").onclick = function() {
+        let num1 = parseFloat(document.getElementById("lernum1").value);
+        let num2 = parseFloat(document.getElementById("lernum2").value);
+        let resultado = num1 + num2;
+        alert("O resultado é: " + resultado);
+      }
+
+      document.getElementById("botaomenos").onclick = function() {
+        let num1 = parseFloat(document.getElementById("lernum1").value);
+        let num2 = parseFloat(document.getElementById("lernum2").value);
+        let resultado = num1 - num2;
+        alert("O resultado é: " + resultado);
+      }
+
+
+      document.getElementById("botaodivide").onclick = function() {
+        let num1 = parseFloat(document.getElementById("lernum1").value);
+        let num2 = parseFloat(document.getElementById("lernum2").value);
+        let resultado = num1 / num2;
+        alert("O resultado é: " + resultado);
+      }
+
+
+
+
+      document.getElementById("botaomulti").onclick = function() {
+        let num1 = parseFloat(document.getElementById("lernum1").value);
+        let num2 = parseFloat(document.getElementById("lernum2").value);
+        let resultado = num1 * num2;
+        alert("O resultado é: " + resultado);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+      //login simples//
+
+      let botaoregister = document.getElementById('mensagem')
+
+      botaoregister.onclick = function() {
+
+        let user = document.getElementById("reuser");
+        let senha = document.getElementById("resenha")
+
+
+        if (user.value == 'admin' && senha.value == '1234') {
+          alert("voce esta logado")
+        } else {
+          alert('voce nao esta logado')
+        }
+
+      }
+
+
+
+
+
+
+
+
+
+
+      //digitaçao de texto//
+      let qtde = document.getElementById('qtde');
+      let inputElement = document.getElementById('resumo');
+
+      inputElement.addEventListener('keyup', function(event) {
+        qtde.innerHTML = 'Quantidade: ' + inputElement.value.length
+      });
+
+      function limpar() {
+        inputElement.value = ''
+        qtde.innerHTML = 'Quantidade: '
+      }
+
+
+
+
+
+
+
+
+      //calculadora de area
+      document.getElementById('calculararea').addEventListener('click', function() {
+        var largura = document.getElementById('recebelargura').value;
+        var comprimento = document.getElementById('recebecomprimento').value;
+
+        let area = (largura * comprimento)
+
+        alert("Seu IMC é igual a " + area);
+
+      });
+    </script>
+  </body>
+
+</html>
